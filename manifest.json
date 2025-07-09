@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Redmine Time Entry Helper",
+  "version": "1.0.0",
+  "description": "A Chrome extension to help with Redmine time entry",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["src/content.ts"]
+    }
+  ]
+}
