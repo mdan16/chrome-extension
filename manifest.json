@@ -9,6 +9,12 @@
     "activeTab",
     "scripting"
   ],
+  "action": {
+    "default_title": "Open Redmine Time Entry Helper"
+  },
+  "background": {
+    "service_worker": "src/background.ts"
+  },
   "side_panel": {
     "default_path": "index.html"
   },
